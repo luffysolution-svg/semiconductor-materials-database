@@ -63,7 +63,4 @@ config.py
 *.log
 *.tmp
 
-# 备份文件
-*_old_backup*
-*_backup*
-*.bak
+
