@@ -1,5 +1,4 @@
-# 主流半导体材料数据库# 主流半导体材料数据库项目# 主流半导体材料数据库项目# 半导体材料信息查询系统
-
+# 主流半导体材料数据库
 
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
@@ -14,7 +13,7 @@
 
 
 
-## 📖 项目简介[![Materials Project](https://img.shields.io/badge/Data-Materials%20Project-orange.svg)](https://materialsproject.org)## 📁 项目概述本项目使用 Materials Project API 获取半导体材料的详细信息，包括带隙、能带位置、晶体参数等，并自动生成 Excel 表格和可视化 PDF 报告。
+## 📖 项目简介[![Materials Project](https://img.shields.io/badge/Data-Materials%20Project-orange.svg)](https://materialsproject.org)[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 
 
 
@@ -22,7 +21,7 @@
 
 
 
-### ✨ 主要特点通过 Materials Project API 获取并分析主流研究的半导体材料数据，涵盖金属硫化物、氧化物、氮化物等10大类别的完整电子结构和性能数据。
+### ✨ 主要特点> 基于 Materials Project API 的半导体材料数据采集与可视化分析工具[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
 
@@ -30,300 +29,359 @@
 
 - 📊 **专业可视化** - 生成8张高质量学术图表（300 DPI，完美中文支持）
 
-- 📈 **智能评估** - 自动评估光伏和光催化应用潜力## 🎯 项目特点本项目通过 Materials Project API 获取并分析主流研究的半导体材料数据，涵盖金属硫化物、氧化物、氮化物等10大类别，共76种半导体材料的完整电子结构和性能数据。## 📋 项目简介
+- 📈 **智能评估** - 自动评估光伏和光催化应用潜力## 📖 项目简介[![Materials Project](https://img.shields.io/badge/Data-Materials%20Project-orange.svg)](https://materialsproject.org)
+- ## 📁 项目概述本项目使用 Materials Project API 获取半导体材料的详细信息，包括带隙、能带位置、晶体参数等，并自动生成 Excel 表格和可视化 PDF 报告。
 
 - 📑 **美化输出** - 生成格式化Excel数据库，带分类颜色标记
 
-- 🎨 **中文完美支持** - 彻底解决中文字体乱码问题
+- 🔒 **安全配置** - API Key配置文件系统，保护敏感信息
 
 
 
-## 📁 项目结构- 📊 **自动化数据采集** - 从 Materials Project 批量获取76+种半导体材料数据
+---本项目通过 Materials Project API 自动获取并分析主流半导体材料的完整电子结构和性能数据，涵盖金属硫化物、氧化物、氮化物等10大类别共76+种材料，并生成专业的可视化图表。
 
 
 
-```- 🎨 **专业可视化** - 生成8张高质量学术图表（300 DPI，完美中文支持）
+## 📁 项目结构
+
+
+
+```### ✨ 主要特点通过 Materials Project API 获取并分析主流研究的半导体材料数据，涵盖金属硫化物、氧化物、氮化物等10大类别的完整电子结构和性能数据。
 
 semiconductor-materials-database/
 
-│- 📈 **应用评估** - 自动评估光伏和光催化应用潜力**创建日期：** 2025年10月6日  本系统可以自动从 Materials Project 数据库获取以下半导体材料的信息：
-
 ├── 获取主流半导体材料数据.py    # 数据采集脚本
 
-├── 数据可视化分析.py            # 可视化生成脚本- 📑 **美化数据库** - 自动生成格式化Excel数据库，带颜色标记
+├── 数据可视化分析.py            # 可视化生成脚本
 
-├── requirements.txt            # Python依赖包
+├── config_example.py           # API配置示例- 🔬 **自动化数据采集** - 批量获取76+种半导体材料的完整数据
 
-├── README.md                  # 项目说明文档**作者：** Luffy.Solution  - ZnIn2S4（硫化锌铟）
+├── requirements.txt            # Python依赖
 
-├── LICENSE                    # MIT开源许可
+├── README.md                  # 项目文档- 📊 **专业可视化** - 生成8张高质量学术图表（300 DPI，完美中文支持）
 
-└── .gitignore                 # Git忽略规则## 📁 项目结构
+├── LICENSE                    # MIT许可证
+
+└── .gitignore                 # Git忽略规则- 📈 **智能评估** - 自动评估光伏和光催化应用潜力## 🎯 项目特点本项目通过 Materials Project API 获取并分析主流研究的半导体材料数据，涵盖金属硫化物、氧化物、氮化物等10大类别，共76种半导体材料的完整电子结构和性能数据。## 📋 项目简介
 
 ```
 
-**数据来源：** Materials Project Database (materialsproject.org)- C3N4（氮化碳）
+- 📑 **美化输出** - 生成格式化Excel数据库，带分类颜色标记
+
+---
+
+- 🎨 **中文完美支持** - 彻底解决中文字体乱码问题
 
 ## 🚀 快速开始
 
-```
+
 
 ### 前置要求
 
-semiconductor-materials-database/- TiO2（二氧化钛）
+## 📁 项目结构- 📊 **自动化数据采集** - 从 Materials Project 批量获取76+种半导体材料数据
 
 - Python 3.7+
 
-- Materials Project API Key（[免费注册获取](https://materialsproject.org)）│
+- Materials Project API Key（[免费注册获取](https://materialsproject.org)）
 
 
 
-### 安装步骤├── 获取主流半导体材料数据.py    # 数据采集脚本---- CdS（硫化镉）
+### 安装步骤```- 🎨 **专业可视化** - 生成8张高质量学术图表（300 DPI，完美中文支持）
 
 
 
-**1. 克隆仓库**├── 数据可视化分析.py            # 可视化生成脚本
+**1. 克隆仓库**semiconductor-materials-database/
 
 
 
-```bash├── requirements.txt            # Python依赖- Ti3C2（钛碳化物）
+```bash│- 📈 **应用评估** - 自动评估光伏和光催化应用潜力**创建日期：** 2025年10月6日  本系统可以自动从 Materials Project 数据库获取以下半导体材料的信息：
 
 git clone https://github.com/luffysolution-svg/semiconductor-materials-database.git
 
-cd semiconductor-materials-database├── README.md                  # 项目说明
+cd semiconductor-materials-database├── 获取主流半导体材料数据.py    # 数据采集脚本
 
 ```
 
-├── LICENSE                    # 开源许可## 📊 项目文件说明- BiVO4（钒酸铋）
+├── 数据可视化分析.py            # 可视化生成脚本- 📑 **美化数据库** - 自动生成格式化Excel数据库，带颜色标记
 
 **2. 安装依赖**
 
+├── requirements.txt            # Python依赖包
+
 ```bash
-pip install -r requirements.txt
+
+pip install -r requirements.txt├── README.md                  # 项目说明文档**作者：** Luffy.Solution  - ZnIn2S4（硫化锌铟）
+
 ```
+
+├── LICENSE                    # MIT开源许可
 
 **3. 配置 API Key**
 
-1. 获取 Materials Project API Key：访问 [materialsproject.org](https://materialsproject.org) 免费注册并获取 API Key
-2. 复制配置文件示例：
+└── .gitignore                 # Git忽略规则## 📁 项目结构
+
+1. 访问 [materialsproject.org](https://materialsproject.org) 注册并获取 API Key
+
+2. 复制配置文件：```
+
    ```bash
-   copy config_example.py config.py    # Windows
-   # 或
-   cp config_example.py config.py      # Linux/Mac
+
+   # Windows**数据来源：** Materials Project Database (materialsproject.org)- C3N4（氮化碳）
+
+   copy config_example.py config.py
+
+   ## 🚀 快速开始
+
+   # Linux/Mac
+
+   cp config_example.py config.py```
+
    ```
-3. 编辑 `config.py` 文件，填入您的 API Key：
+
+3. 编辑 `config.py`，填入您的真实 API Key：
+4. ### 前置要求
+
    ```python
-   API_KEY = "您的实际API密钥"
+
+   API_KEY = "您的实际API密钥"semiconductor-materials-database/- TiO2（二氧化钛）
+
    BASE_URL = "https://api.materialsproject.org"
-   ```
 
-> ⚠️ **安全提示**：`config.py` 包含敏感信息，已被 `.gitignore` 排除，不会上传到 Git 仓库
-
+   ```- Python 3.7+
 
 
-### 使用方法
 
-```bash| 文件名 | 说明 | 大小 |- FeOOH（羟基氧化铁）
+> ⚠️ **安全提示**：`config.py` 包含敏感信息，已被 `.gitignore` 排除，不会上传到 Git- Materials Project API Key（[免费注册获取](https://materialsproject.org)）│
 
-**步骤1：获取数据**
 
-pip install -r requirements.txt
 
-```bash
+---
 
-python 获取主流半导体材料数据.py```|--------|------|------|- Fe3O4（四氧化三铁）
+
+
+## 💻 使用方法### 安装步骤├── 获取主流半导体材料数据.py    # 数据采集脚本---- CdS（硫化镉）
+
+
+
+### 步骤1：获取数据
+
+
+
+```bash**1. 克隆仓库**├── 数据可视化分析.py            # 可视化生成脚本
+
+python 获取主流半导体材料数据.py
 
 ```
 
 
 
-**输出文件：**
+**输出文件：**```bash├── requirements.txt            # Python依赖- Ti3C2（钛碳化物）
 
-- `主流半导体材料数据库.xlsx` - 格式化的Excel数据库### 2. 配置 API Key| `主流半导体材料数据库.xlsx` | **主数据库** - 包含76种材料的20项性能指标，带自动格式化和颜色标记 | 14.8 KB |
+- `主流半导体材料数据库.xlsx` - 美化的Excel数据库
 
-- `主流半导体材料数据库.json` - JSON格式完整数据
+- `主流半导体材料数据库.json` - JSON格式完整数据git clone https://github.com/luffysolution-svg/semiconductor-materials-database.git
 
 - `主流半导体材料数据摘要.txt` - 统计摘要报告
 
+cd semiconductor-materials-database├── README.md                  # 项目说明
 
-
-**步骤2：生成可视化图表**在 `获取主流半导体材料数据.py` 中设置您的 Materials Project API Key：| `主流半导体材料数据库.json` | JSON格式完整数据，便于程序读取和进一步分析 | 58.7 KB |## 📊 获取的数据
-
-
-
-```bash
-
-python 数据可视化分析.py
-
-``````python| `主流半导体材料数据摘要.txt` | 统计摘要报告，包含TOP 10材料推荐 | 3.2 KB |
-
-
-
-**输出：** 8张高清PNG图表（300 DPI）API_KEY = "您的API密钥"  # 从 https://materialsproject.org 获取
-
-
-
-## 📊 数据指标```### 基本信息
-
-
-
-### 核心性能指标（20项）
-
-
-
-| 类别 | 指标 |### 3. 获取数据### 2️⃣ 数据获取脚本- Material ID（材料编号）
-
-|------|------|
-
-| **基本信息** | Materials ID、化学式、材料分类 |
-
-| **电子结构** | 带隙、直接/间接带隙、导带底(CBM)、价带顶(VBM)、费米能级 |
-
-| **热力学** | 形成能、能量高于凸包（稳定性指标） |```bash- 化学式（标准化）
-
-| **物理性质** | 密度、晶胞体积 |
-
-| **晶体结构** | 空间群、晶系 |python 获取主流半导体材料数据.py
-
-| **应用评估** | 光伏潜力、光催化潜力、综合光电潜力 |
-
-```| 文件名 | 说明 |- 是否稳定
-
-## 🔬 材料类别覆盖
-
-
-
-| 类别 | 数量 | 代表性材料 | 典型带隙 |
-
-|------|:----:|-----------|---------|**输出文件：**|--------|------|- 热力学稳定性（能量高于壳层）
-
-| 金属硫化物 | 18+ | CdS, ZnS, MoS₂ | 0.8-3.5 eV |
-
-| 金属氧化物 | 14+ | TiO₂, ZnO, WO₃ | 1.0-3.5 eV |- `主流半导体材料数据库.xlsx` - 美化的Excel数据库
-
-| 氮化物 | 9+ | GaN, AlN, InN | 0.7-6.0 eV |
-
-| 碳化物 | 8+ | SiC, WC, TaC | 2.0-3.0 eV |- `主流半导体材料数据库.json` - JSON格式完整数据| `获取主流半导体材料数据.py` | **核心采集脚本** - 从Materials Project API批量获取数据并生成Excel数据库 |
-
-| 硒化物 | 7+ | CdSe, ZnSe, MoSe₂ | 1.0-2.7 eV |
-
-| 碲化物 | 6+ | CdTe, ZnTe, Bi₂Te₃ | 1.0-2.5 eV |- `主流半导体材料数据摘要.txt` - 统计摘要报告
-
-| 卤化物 | 5+ | BiOCl, BiOBr, AgCl | 2.0-3.5 eV |
-
-| 磷化物 | 4+ | GaP, InP, AlP | 1.4-2.5 eV |### 电子性质
-
-| 砷化物 | 3+ | GaAs, InAs, AlAs | 0.4-2.2 eV |
-
-| 金属硫氧化物 | 2+ | Bi₂S₂O₃ | 1.0-1.8 eV |### 4. 生成可视化图表
-
-
-
-**总计：** 76+ 种材料**主要功能：**- **带隙 (Band Gap)**：半导体的禁带宽度
-
-
-
-## 📈 可视化图表```bash
-
-
-
-生成的8张专业图表：python 数据可视化分析.py- 🔍 按化学体系搜索10大类半导体材料- **导带最小值 (CBM)**：导带底的能量位置
-
-
-
-1. **带隙分布按类别** - 小提琴图展示各类别的带隙分布特征```
-
-2. **带隙分布直方图** - 标注光伏最佳区(1.1-1.8 eV)和光催化区(2.0-3.5 eV)
-
-3. **能带位置图** - CBM/VBM相对水分解能级的位置关系- 📡 获取完整电子结构数据（带隙、CBM、VBM等）- **价带最大值 (VBM)**：价带顶的能量位置
-
-4. **形成能与稳定性** - 气泡图分析热力学稳定性
-
-5. **材料分布饼图** - 材料类别和应用潜力的统计分布**输出：** 8张高清PNG图表（300 DPI）
-
-6. **带隙类型分布** - 直接带隙 vs 间接带隙对比
-
-7. **TOP材料热力图** - TOP 20光伏候选材料性能对比1. 带隙分布按类别（小提琴图）- 🎯 评估光伏和光催化应用潜力- **费米能级**：电子填充的最高能级
-
-8. **密度与带隙关系** - 散点图 + 回归线分析
-
-2. 带隙分布直方图与应用分区
-
-## 🌟 推荐材料
-
-3. 能带位置图（CBM vs VBM）- 📊 自动生成美化的Excel数据库- 是否为直接带隙
-
-### 最佳光伏候选材料
-
-4. 形成能与稳定性分析
-
-1. **GaAs** (1.42 eV) - 理想带隙，直接带隙，高效率
-
-2. **CdTe** (1.48 eV) - 商用薄膜太阳能电池材料5. 材料类别与应用潜力分布- 是否为金属
-
-3. **InP** (1.35 eV) - 高载流子迁移率
-
-4. **CdS** (2.40 eV) - 优秀的窗口层材料6. 带隙类型分布
-
-5. **GaP** (2.26 eV) - 宽带隙半导体
-
-7. TOP材料性能热力图### 3️⃣ 数据可视化文件
-
-### 最佳光催化候选材料
-
-8. 密度与带隙关系
-
-1. **TiO₂** (3.20 eV) - 经典光催化剂，稳定性优异
-
-2. **WO₃** (2.76 eV) - 可见光响应良好### 晶体结构
-
-3. **BiVO₄** (2.40 eV) - 水氧化性能优异
-
-4. **ZnO** (3.25 eV) - 高载流子迁移率## 📊 数据库指标
-
-5. **GaN** (3.30 eV) - 化学稳定性极佳
-
-#### Python脚本- 晶格参数（a, b, c）
-
-## 🛠️ 技术细节
-
-### 核心性能指标（20项）
-
-### 数据采集策略
-
-| 文件名 | 说明 |- 晶格角（α, β, γ）
-
-```python
-
-# 按化学体系精确搜索| 指标类别 | 具体指标 |
-
-chemical_systems = {
-
-    "金属硫化物": ["Cd-S", "Zn-S", "Mo-S", ...],|---------|---------||--------|------|- 晶系（立方、四方、六方等）
-
-    "金属氧化物": ["Ti-O", "Zn-O", "W-O", ...],
-
-    # ... 更多类别| **基本信息** | Materials ID, 化学式, 分类 |
-
-}
-
-| **电子结构** | 带隙, 直接带隙, 导带底CBM, 价带顶VBM, 费米能级 || `数据可视化分析.py` | **终极版可视化脚本** - 生成8张高质量学术图表，完美支持中文显示 |- 空间群符号和编号
-
-# API调用流程
-
-1. 按化学体系搜索 → 获取Materials ID列表| **热力学稳定性** | 形成能, 能量高于凸包 |
-
-2. 批量获取电子结构 → 带隙、CBM、VBM等
-
-3. 获取热力学数据 → 形成能、稳定性| **物理性质** | 密度, 体积 |- 体积
-
-4. 评估应用潜力 → 基于带隙和能带位置
-
-5. 生成美化Excel → 自动排序、配色、列宽调整| **晶体结构** | 空间群, 晶系 |
+### 步骤2：生成可视化
 
 ```
 
-| **应用评估** | 光伏潜力, 光催化潜力, 综合潜力 |**技术特点：**- 密度
+```bash
+
+python 数据可视化分析.py├── LICENSE                    # 开源许可## 📊 项目文件说明- BiVO4（钒酸铋）
+
+```
+
+**2. 安装依赖**
+
+**输出：** 8张高清PNG图表（300 DPI）
+
+```bash
+
+---pip install -r requirements.txt
+
+```
+
+## 📊 数据指标
+
+**3. 配置 API Key**
+
+### 核心性能指标（20项）
+
+1. 获取 Materials Project API Key：访问 [materialsproject.org](https://materialsproject.org) 免费注册并获取 API Key
+
+| 类别 | 指标 |2. 复制配置文件示例：
+
+|------|------|   ```bash
+
+| **基本信息** | Materials ID、化学式、材料分类 |   copy config_example.py config.py    # Windows
+
+| **电子结构** | 带隙、直接/间接带隙、导带底CBM、价带顶VBM、费米能级 |   # 或
+
+| **热力学** | 形成能、能量高于凸包（稳定性指标） |   cp config_example.py config.py      # Linux/Mac
+
+| **物理性质** | 密度、晶胞体积 |   ```
+
+| **晶体结构** | 空间群、晶系 |3. 编辑 `config.py` 文件，填入您的 API Key：
+
+| **应用评估** | 光伏潜力、光催化潜力 |   ```python
+
+   API_KEY = "您的实际API密钥"
+
+---   BASE_URL = "https://api.materialsproject.org"
+
+   ```
+
+## 🔬 材料类别覆盖
+
+> ⚠️ **安全提示**：`config.py` 包含敏感信息，已被 `.gitignore` 排除，不会上传到 Git 仓库
+
+| 类别 | 数量 | 代表性材料 | 典型带隙 |
+
+|------|:----:|-----------|---------|
+
+| 金属硫化物 | 18+ | CdS, ZnS, MoS₂ | 0.8-3.5 eV |
+
+| 金属氧化物 | 14+ | TiO₂, ZnO, WO₃ | 1.0-3.5 eV |### 使用方法
+
+| 氮化物 | 9+ | GaN, AlN, InN | 0.7-6.0 eV |
+
+| 碳化物 | 8+ | SiC, WC, TaC | 2.0-3.0 eV |```bash| 文件名 | 说明 | 大小 |- FeOOH（羟基氧化铁）
+
+| 硒化物 | 7+ | CdSe, ZnSe, MoSe₂ | 1.0-2.7 eV |
+
+| 碲化物 | 6+ | CdTe, ZnTe, Bi₂Te₃ | 1.0-2.5 eV |**步骤1：获取数据**
+
+| 卤化物 | 5+ | BiOCl, BiOBr, AgCl | 2.0-3.5 eV |
+
+| 磷化物 | 4+ | GaP, InP, AlP | 1.4-2.5 eV |pip install -r requirements.txt
+
+| 砷化物 | 3+ | GaAs, InAs, AlAs | 0.4-2.2 eV |
+
+| 金属硫氧化物 | 2+ | Bi₂S₂O₃ | 1.0-1.8 eV |```bash
+
+
+
+**总计：** 76+ 种材料python 获取主流半导体材料数据.py```|--------|------|------|- Fe3O4（四氧化三铁）
+
+
+
+---```
+
+
+
+## 📈 可视化图表
+
+
+
+生成的8张专业图表：**输出文件：**
+
+
+
+1. **带隙分布按类别** - 小提琴图展示各类别的带隙分布特征- `主流半导体材料数据库.xlsx` - 格式化的Excel数据库### 2. 配置 API Key| `主流半导体材料数据库.xlsx` | **主数据库** - 包含76种材料的20项性能指标，带自动格式化和颜色标记 | 14.8 KB |
+
+2. **带隙分布直方图** - 标注光伏最佳区(1.1-1.8 eV)和光催化区(2.0-3.5 eV)
+
+3. **能带位置图** - CBM/VBM相对水分解能级的位置关系- `主流半导体材料数据库.json` - JSON格式完整数据
+
+4. **形成能与稳定性** - 气泡图分析热力学稳定性
+
+5. **材料分布饼图** - 材料类别和应用潜力的统计分布- `主流半导体材料数据摘要.txt` - 统计摘要报告
+
+6. **带隙类型分布** - 直接带隙 vs 间接带隙对比
+
+7. **TOP材料热力图** - TOP 20光伏候选材料性能对比
+
+8. **密度与带隙关系** - 散点图 + 回归线分析
+
+**步骤2：生成可视化图表**在 `获取主流半导体材料数据.py` 中设置您的 Materials Project API Key：| `主流半导体材料数据库.json` | JSON格式完整数据，便于程序读取和进一步分析 | 58.7 KB |## 📊 获取的数据
+
+---
+
+
+
+## 🌟 推荐材料
+
+```bash
+
+### 最佳光伏候选材料
+
+python 数据可视化分析.py
+
+1. **GaAs** (1.42 eV) - 理想带隙，直接带隙，高效率
+
+2. **CdTe** (1.48 eV) - 商用薄膜太阳能电池材料``````python| `主流半导体材料数据摘要.txt` | 统计摘要报告，包含TOP 10材料推荐 | 3.2 KB |
+
+3. **InP** (1.35 eV) - 高载流子迁移率
+
+4. **CdS** (2.40 eV) - 优秀的窗口层材料
+
+5. **GaP** (2.26 eV) - 宽带隙半导体
+
+**输出：** 8张高清PNG图表（300 DPI）API_KEY = "您的API密钥"  # 从 https://materialsproject.org 获取
+
+### 最佳光催化候选材料
+
+
+
+1. **TiO₂** (3.20 eV) - 经典光催化剂，稳定性优异
+
+2. **WO₃** (2.76 eV) - 可见光响应良好## 📊 数据指标```### 基本信息
+
+3. **BiVO₄** (2.40 eV) - 水氧化性能优异
+
+4. **ZnO** (3.25 eV) - 高载流子迁移率
+
+5. **GaN** (3.30 eV) - 化学稳定性极佳
+
+### 核心性能指标（20项）
+
+---
+
+
+
+## 🛠️ 技术细节
+
+| 类别 | 指标 |### 3. 获取数据### 2️⃣ 数据获取脚本- Material ID（材料编号）
+
+### 数据采集策略
+
+|------|------|
+
+```python
+
+# 按化学体系精确搜索| **基本信息** | Materials ID、化学式、材料分类 |
+
+chemical_systems = {
+
+    "金属硫化物": ["Cd-S", "Zn-S", "Mo-S", ...],| **电子结构** | 带隙、直接/间接带隙、导带底(CBM)、价带顶(VBM)、费米能级 |
+
+    "金属氧化物": ["Ti-O", "Zn-O", "W-O", ...],
+
+    # ... 更多类别| **热力学** | 形成能、能量高于凸包（稳定性指标） |```bash- 化学式（标准化）
+
+}
+
+| **物理性质** | 密度、晶胞体积 |
+
+# API调用流程
+
+1. 按化学体系搜索 → 获取Materials ID列表| **晶体结构** | 空间群、晶系 |python 获取主流半导体材料数据.py
+
+2. 批量获取电子结构 → 带隙、CBM、VBM等
+
+3. 获取热力学数据 → 形成能、稳定性| **应用评估** | 光伏潜力、光催化潜力、综合光电潜力 |
+
+4. 评估应用潜力 → 基于带隙和能带位置
+
+5. 生成美化Excel → 自动排序、配色、列宽调整```| 文件名 | 说明 |- 是否稳定
+
+```
+
+## 🔬 材料类别覆盖
 
 ### 可视化技术亮点
 
@@ -331,53 +389,377 @@ chemical_systems = {
 
 **中文字体完美显示：**
 
-## 🔬 材料类别覆盖- ✅ 直接使用Windows系统字体文件（`C:\Windows\Fonts\msyh.ttc`）- 原子数量
+| 类别 | 数量 | 代表性材料 | 典型带隙 |
 
 ```python
 
-# 直接指定系统字体文件路径
+# 直接指定Windows系统字体文件路径|------|:----:|-----------|---------|**输出文件：**|--------|------|- 热力学稳定性（能量高于壳层）
 
 font_path = r'C:\Windows\Fonts\msyh.ttc'  # 微软雅黑
 
-chinese_font = FontProperties(fname=font_path)| 类别 | 数量 | 代表性材料 |- ✅ 强制刷新字体缓存，彻底解决中文乱码问题
+chinese_font = FontProperties(fname=font_path)| 金属硫化物 | 18+ | CdS, ZnS, MoS₂ | 0.8-3.5 eV |
 
 
 
-# 强制刷新字体缓存|------|------|-----------|
+# 强制刷新字体缓存| 金属氧化物 | 14+ | TiO₂, ZnO, WO₃ | 1.0-3.5 eV |- `主流半导体材料数据库.xlsx` - 美化的Excel数据库
 
 fm._load_fontmanager(try_read_cache=False)
 
-| 金属硫化物 | 18+ | CdS, ZnS, MoS₂ |- ✅ 300 DPI高分辨率输出，适合论文发表## 🚀 快速开始
+| 氮化物 | 9+ | GaN, AlN, InN | 0.7-6.0 eV |
 
 # 配置全局字体
 
-plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', ...]| 金属氧化物 | 14+ | TiO₂, ZnO, WO₃ |
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', ...]| 碳化物 | 8+ | SiC, WC, TaC | 2.0-3.0 eV |- `主流半导体材料数据库.json` - JSON格式完整数据| `获取主流半导体材料数据.py` | **核心采集脚本** - 从Materials Project API批量获取数据并生成Excel数据库 |
 
 plt.rcParams['axes.unicode_minus'] = False
 
-```| 氮化物 | 9+ | GaN, AlN, InN |- ✅ 专业学术配色方案，10种材料类别独立配色
+```| 硒化物 | 7+ | CdSe, ZnSe, MoSe₂ | 1.0-2.7 eV |
 
 
 
-**专业美化配置：**| 碳化物 | 8+ | SiC, WC, TaC |
+**专业美化配置：**| 碲化物 | 6+ | CdTe, ZnTe, Bi₂Te₃ | 1.0-2.5 eV |- `主流半导体材料数据摘要.txt` - 统计摘要报告
 
 
 
-- 🎨 10种材料类别专属配色（色盲友好）| 硒化物 | 7+ | CdSe, ZnSe, MoSe₂ |### 方法 1: 一键运行（推荐）
+- 🎨 10种材料类别专属配色（色盲友好）| 卤化物 | 5+ | BiOCl, BiOBr, AgCl | 2.0-3.5 eV |
 
 - 📊 Seaborn whitegrid专业学术风格
 
-- 🖼️ 300 DPI高分辨率输出（适合发表）| 碲化物 | 6+ | CdTe, ZnTe |
+- 🖼️ 300 DPI高分辨率输出（适合发表）| 磷化物 | 4+ | GaP, InP, AlP | 1.4-2.5 eV |### 电子性质
 
 - 📐 增强网格、阴影、边框
 
+- 📊 丰富统计标注：样本数、R²值、趋势线| 砷化物 | 3+ | GaAs, InAs, AlAs | 0.4-2.2 eV |
+
+
+
+---| 金属硫氧化物 | 2+ | Bi₂S₂O₃ | 1.0-1.8 eV |### 4. 生成可视化图表
+
+
+
+## 📦 依赖包
+
+
+
+```txt**总计：** 76+ 种材料**主要功能：**- **带隙 (Band Gap)**：半导体的禁带宽度
+
+requests>=2.28.0       # API调用
+
+pandas>=1.5.0          # 数据处理
+
+openpyxl>=3.0.0        # Excel读写
+
+matplotlib>=3.7.0      # 绘图核心## 📈 可视化图表```bash
+
+seaborn>=0.12.0        # 统计可视化
+
+scipy>=1.9.0           # 科学计算
+
+scikit-learn>=1.1.0    # 数据标准化
+
+numpy>=1.23.0          # 数值计算生成的8张专业图表：python 数据可视化分析.py- 🔍 按化学体系搜索10大类半导体材料- **导带最小值 (CBM)**：导带底的能量位置
+
+```
+
+
+
+---
+
+1. **带隙分布按类别** - 小提琴图展示各类别的带隙分布特征```
+
+## 📝 使用场景
+
+2. **带隙分布直方图** - 标注光伏最佳区(1.1-1.8 eV)和光催化区(2.0-3.5 eV)
+
+### 🎓 学术研究
+
+3. **能带位置图** - CBM/VBM相对水分解能级的位置关系- 📡 获取完整电子结构数据（带隙、CBM、VBM等）- **价带最大值 (VBM)**：价带顶的能量位置
+
+- ✅ 论文配图（300 DPI，出版级质量）
+
+- ✅ 材料筛选与性能对比4. **形成能与稳定性** - 气泡图分析热力学稳定性
+
+- ✅ 理论预测验证
+
+5. **材料分布饼图** - 材料类别和应用潜力的统计分布**输出：** 8张高清PNG图表（300 DPI）
+
+### 📚 教学演示
+
+6. **带隙类型分布** - 直接带隙 vs 间接带隙对比
+
+- ✅ 半导体物理课程
+
+- ✅ 材料科学案例分析7. **TOP材料热力图** - TOP 20光伏候选材料性能对比1. 带隙分布按类别（小提琴图）- 🎯 评估光伏和光催化应用潜力- **费米能级**：电子填充的最高能级
+
+- ✅ Python数据分析教学
+
+8. **密度与带隙关系** - 散点图 + 回归线分析
+
+### 🏭 工程应用
+
+2. 带隙分布直方图与应用分区
+
+- ✅ 光伏材料选型
+
+- ✅ 光催化剂设计## 🌟 推荐材料
+
+- ✅ 新材料开发参考
+
+3. 能带位置图（CBM vs VBM）- 📊 自动生成美化的Excel数据库- 是否为直接带隙
+
+---
+
+### 最佳光伏候选材料
+
+## 🔧 常见问题
+
+4. 形成能与稳定性分析
+
+<details>
+
+<summary><strong>Q: API调用失败怎么办？</strong></summary>1. **GaAs** (1.42 eV) - 理想带隙，直接带隙，高效率
+
+
+
+**解决方法：**2. **CdTe** (1.48 eV) - 商用薄膜太阳能电池材料5. 材料类别与应用潜力分布- 是否为金属
+
+1. 检查API Key是否正确配置
+
+2. 确认网络连接正常3. **InP** (1.35 eV) - 高载流子迁移率
+
+3. 验证Materials Project服务状态
+
+4. 查看是否超出API调用限制4. **CdS** (2.40 eV) - 优秀的窗口层材料6. 带隙类型分布
+
+
+
+</details>5. **GaP** (2.26 eV) - 宽带隙半导体
+
+
+
+<details>7. TOP材料性能热力图### 3️⃣ 数据可视化文件
+
+<summary><strong>Q: 中文显示乱码？</strong></summary>
+
+### 最佳光催化候选材料
+
+**解决方法：**
+
+- **Windows:** 确保已安装微软雅黑（msyh.ttc）8. 密度与带隙关系
+
+- **Linux:** 安装中文字体 `sudo apt-get install fonts-wqy-microhei`
+
+- **macOS:** 使用系统自带的 PingFang SC 或 Hiragino Sans1. **TiO₂** (3.20 eV) - 经典光催化剂，稳定性优异
+
+
+
+</details>2. **WO₃** (2.76 eV) - 可见光响应良好### 晶体结构
+
+
+
+<details>3. **BiVO₄** (2.40 eV) - 水氧化性能优异
+
+<summary><strong>Q: 图表生成失败？</strong></summary>
+
+4. **ZnO** (3.25 eV) - 高载流子迁移率## 📊 数据库指标
+
+**检查项：**
+
+1. 是否已运行数据采集脚本5. **GaN** (3.30 eV) - 化学稳定性极佳
+
+2. 确认生成了 `主流半导体材料数据库.xlsx`
+
+3. 检查所有依赖包版本是否符合要求#### Python脚本- 晶格参数（a, b, c）
+
+
+
+</details>## 🛠️ 技术细节
+
+
+
+---### 核心性能指标（20项）
+
+
+
+## 🤝 贡献指南### 数据采集策略
+
+
+
+欢迎贡献！您可以：| 文件名 | 说明 |- 晶格角（α, β, γ）
+
+
+
+1. 🐛 报告Bug - 在Issues中提交```python
+
+2. 💡 提出新功能建议
+
+3. 📝 改进文档# 按化学体系精确搜索| 指标类别 | 具体指标 |
+
+4. 🔧 提交代码优化
+
+chemical_systems = {
+
+**贡献流程：**
+
+    "金属硫化物": ["Cd-S", "Zn-S", "Mo-S", ...],|---------|---------||--------|------|- 晶系（立方、四方、六方等）
+
+```bash
+
+# 1. Fork本仓库    "金属氧化物": ["Ti-O", "Zn-O", "W-O", ...],
+
+# 2. 创建特性分支
+
+git checkout -b feature/AmazingFeature    # ... 更多类别| **基本信息** | Materials ID, 化学式, 分类 |
+
+
+
+# 3. 提交更改}
+
+git commit -m 'Add some AmazingFeature'
+
+| **电子结构** | 带隙, 直接带隙, 导带底CBM, 价带顶VBM, 费米能级 || `数据可视化分析.py` | **终极版可视化脚本** - 生成8张高质量学术图表，完美支持中文显示 |- 空间群符号和编号
+
+# 4. 推送到分支
+
+git push origin feature/AmazingFeature# API调用流程
+
+
+
+# 5. 创建Pull Request1. 按化学体系搜索 → 获取Materials ID列表| **热力学稳定性** | 形成能, 能量高于凸包 |
+
+```
+
+2. 批量获取电子结构 → 带隙、CBM、VBM等
+
+---
+
+3. 获取热力学数据 → 形成能、稳定性| **物理性质** | 密度, 体积 |- 体积
+
+## 📄 数据来源与引用
+
+4. 评估应用潜力 → 基于带隙和能带位置
+
+**数据来源：** [Materials Project](https://materialsproject.org)  
+
+**数据许可：** CC BY 4.05. 生成美化Excel → 自动排序、配色、列宽调整| **晶体结构** | 空间群, 晶系 |
+
+
+
+**引用格式：**```
+
+
+
+```| **应用评估** | 光伏潜力, 光催化潜力, 综合潜力 |**技术特点：**- 密度
+
+Jain, A., Ong, S. P., Hautier, G., Chen, W., Richards, W. D., 
+
+Dacek, S., Cholia, S., Gunter, D., Skinner, D., Ceder, G., & ### 可视化技术亮点
+
+Persson, K. A. (2013). Commentary: The Materials Project: A 
+
+materials genome approach to accelerating materials innovation. 
+
+APL Materials, 1(1), 011002.
+
+https://doi.org/10.1063/1.4812323**中文字体完美显示：**
+
+```
+
+## 🔬 材料类别覆盖- ✅ 直接使用Windows系统字体文件（`C:\Windows\Fonts\msyh.ttc`）- 原子数量
+
+---
+
+```python
+
+## 📜 开源许可
+
+# 直接指定系统字体文件路径
+
+本项目采用 [MIT License](LICENSE) 开源许可证。
+
+font_path = r'C:\Windows\Fonts\msyh.ttc'  # 微软雅黑
+
+- ✅ 商业使用
+
+- ✅ 修改chinese_font = FontProperties(fname=font_path)| 类别 | 数量 | 代表性材料 |- ✅ 强制刷新字体缓存，彻底解决中文乱码问题
+
+- ✅ 分发
+
+- ✅ 私人使用
+
+
+
+**注意：** 使用Materials Project数据请遵守其 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可协议。# 强制刷新字体缓存|------|------|-----------|
+
+
+
+---fm._load_fontmanager(try_read_cache=False)
+
+
+
+## 📧 联系方式| 金属硫化物 | 18+ | CdS, ZnS, MoS₂ |- ✅ 300 DPI高分辨率输出，适合论文发表## 🚀 快速开始
+
+
+
+- **作者：** Luffy Solution# 配置全局字体
+
+- **GitHub：** [@luffysolution-svg](https://github.com/luffysolution-svg)
+
+- **项目主页：** [semiconductor-materials-database](https://github.com/luffysolution-svg/semiconductor-materials-database)plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', ...]| 金属氧化物 | 14+ | TiO₂, ZnO, WO₃ |
+
+- **问题反馈：** [Issues](https://github.com/luffysolution-svg/semiconductor-materials-database/issues)
+
+plt.rcParams['axes.unicode_minus'] = False
+
+---
+
+```| 氮化物 | 9+ | GaN, AlN, InN |- ✅ 专业学术配色方案，10种材料类别独立配色
+
+## ⭐ Star History
+
+
+
+如果这个项目对您有帮助，请给一个 ⭐️ Star 支持一下！
+
+**专业美化配置：**| 碳化物 | 8+ | SiC, WC, TaC |
+
+---
+
+
+
+## 🙏 致谢
+
+- 🎨 10种材料类别专属配色（色盲友好）| 硒化物 | 7+ | CdSe, ZnSe, MoSe₂ |### 方法 1: 一键运行（推荐）
+
+- [Materials Project](https://materialsproject.org) - 提供优质的材料数据库
+
+- [Matplotlib](https://matplotlib.org) - 强大的Python可视化库- 📊 Seaborn whitegrid专业学术风格
+
+- [Pandas](https://pandas.pydata.org) - 数据分析利器
+
+- 🖼️ 300 DPI高分辨率输出（适合发表）| 碲化物 | 6+ | CdTe, ZnTe |
+
+---
+
+- 📐 增强网格、阴影、边框
+
+<div align="center">
+
 - 📊 丰富统计标注：样本数、R²值、趋势线| 卤化物 | 5+ | BiOCl, BiOBr |#### 生成的图表（8张）
 
+**最后更新：** 2025年10月6日  
 
+**版本：** v1.0  
+
+**项目状态：** ✅ 生产就绪
 
 ## 📦 依赖包| 磷化物 | 4+ | GaP, InP, AlP |
 
+Made with ❤️ by [Luffy Solution](https://github.com/luffysolution-svg)
 
+
+
+</div>
 
 ```txt| 砷化物 | 3+ | GaAs, InAs |直接运行主程序，它会自动完成所有步骤：
 
