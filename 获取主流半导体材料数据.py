@@ -20,6 +20,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 # API配置
 try:
     from config import API_KEY, BASE_URL
+
     headers = {"X-API-KEY": API_KEY}
 except ImportError:
     print("=" * 80)

@@ -1,5 +1,5 @@
 # Materials Project API 配置文件示例
-# 
+#
 # 使用方法：
 # 1. 复制此文件并重命名为 config.py
 # 2. 将下面的 YOUR_API_KEY_HERE 替换为您的真实 API Key
