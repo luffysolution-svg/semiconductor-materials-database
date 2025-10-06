@@ -62,3 +62,8 @@ config.py
 # 临时文件
 *.log
 *.tmp
+
+# 备份文件
+*_old_backup*
+*_backup*
+*.bak
