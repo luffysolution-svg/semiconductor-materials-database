@@ -52,6 +52,8 @@ wheels/
 文件整理报告.md
 可视化优化说明.md
 快速启动.ps1
+部署到GitHub.ps1
+执行推送.ps1
 
 # 临时文件
 *.log
