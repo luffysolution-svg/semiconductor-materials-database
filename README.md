@@ -98,29 +98,26 @@ cd semiconductor-materials-database├── README.md                  # 项目
 
 **2. 安装依赖**
 
-└── .gitignore                 # Git忽略规则
-
 ```bash
-
-pip install -r requirements.txt```- BiVO6（钒酸铋）
-
+pip install -r requirements.txt
 ```
-
-
 
 **3. 配置 API Key**
 
-## 🚀 快速开始### 1️⃣ 核心数据文件- ZnCdSe（硒化锌镉）
+1. 获取 Materials Project API Key：访问 [materialsproject.org](https://materialsproject.org) 免费注册并获取 API Key
+2. 复制配置文件示例：
+   ```bash
+   copy config_example.py config.py    # Windows
+   # 或
+   cp config_example.py config.py      # Linux/Mac
+   ```
+3. 编辑 `config.py` 文件，填入您的 API Key：
+   ```python
+   API_KEY = "您的实际API密钥"
+   BASE_URL = "https://api.materialsproject.org"
+   ```
 
-在 `获取主流半导体材料数据.py` 中设置您的 API Key：
-
-
-
-```python
-
-API_KEY = "您的API密钥"  # 从 https://materialsproject.org 获取### 1. 安装依赖- MoS2（二硫化钼）
-
-```
+> ⚠️ **安全提示**：`config.py` 包含敏感信息，已被 `.gitignore` 排除，不会上传到 Git 仓库
 
 
 

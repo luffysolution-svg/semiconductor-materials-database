@@ -3,6 +3,9 @@ Materials Project API - 主流半导体材料数据获取
 作者: Luffy.Solution
 日期: 2025年10月6日
 功能: 获取100+主流半导体材料的完整数据
+
+Materials Project 数据使用 CC BY 4.0 许可。
+数据来源: https://materialsproject.org/
 """
 
 import json
@@ -15,9 +18,22 @@ from openpyxl import load_workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
 # API配置
-API_KEY = "8Fv89Xd3xCyJxw9oyc2srbKbHBqA9MGK"
-BASE_URL = "https://api.materialsproject.org"
-headers = {"X-API-KEY": API_KEY}
+try:
+    from config import API_KEY, BASE_URL
+    headers = {"X-API-KEY": API_KEY}
+except ImportError:
+    print("=" * 80)
+    print("错误: 找不到 config.py 文件")
+    print("=" * 80)
+    print()
+    print("请按照以下步骤配置:")
+    print("1. 复制 config_example.py 为 config.py")
+    print("2. 在 config.py 中填入您的 Materials Project API Key")
+    print("   获取 API Key: https://materialsproject.org/api")
+    print("3. 重新运行此脚本")
+    print()
+    print("=" * 80)
+    exit(1)
 
 print("=" * 80)
 print("Materials Project API - 主流半导体材料数据获取系统")
