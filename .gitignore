@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 数据文件
+*.xlsx
+*.json
+*.txt
+
+# 可视化输出图片
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 项目特定排除
+项目完成总结.pdf
+项目文件结构.txt
+文件整理报告.md
+可视化优化说明.md
+快速启动.ps1
+
+# 临时文件
+*.log
+*.tmp
