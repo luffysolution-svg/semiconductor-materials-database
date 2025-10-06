@@ -26,7 +26,11 @@ wheels/
 # 数据文件
 *.xlsx
 *.json
-*.txt
+主流半导体材料数据摘要.txt
+
+# 但保留这些文件
+!requirements.txt
+!LICENSE
 
 # 可视化输出图片
 *.png
